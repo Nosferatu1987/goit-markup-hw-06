@@ -1349,6 +1349,115 @@ box-sizing: border-box;
 
 
 
+
+
+
+/* FOOTER */
+.secondary {
+  display: flex;
+  align-items: baseline;
+}
+
+.secondary h2 {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color-white);
+}
+
+.subscribe {
+  display: inline-flex;
+}
+
+.form-footer {
+  width: 358px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--bg-color-gray);
+
+  padding: 15px 0 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+
+  border-radius: 4px;
+}
+
+.button-footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin-left: 12px;
+  min-width: 200px;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: var(--main-text-color-blue);
+}
+
+.button-view {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button-title {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--main-text-color-white);
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-text-color-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Модальное окно */
 
 /* Параметры фона модального окна */
@@ -1380,7 +1489,7 @@ box-sizing: border-box;
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
   background-color: var(--main-text-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1437,7 +1546,7 @@ box-sizing: border-box;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--primery-text-color);
+  color: var(--main-text-color-black);
 }
 
 .form-field {
@@ -1453,12 +1562,12 @@ box-sizing: border-box;
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: var(--second-test-color);
+  color: var(--main-text-color-gray);
 }
 
 .form-field:hover input,
 .form-field:hover textarea {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--main-text-color-blue);
   border-radius: 4px;
 }
 
@@ -1478,8 +1587,9 @@ box-sizing: border-box;
   position: relative;
 }
 
-.form-field:hover .form-svg {
-  fill: var(--accent-color);
+.form-field:hover .form-svg,
+.form-field:focus-within .form-svg{
+  fill: var(--main-text-color-blue);
 }
 
 .form-field .form-svg {
@@ -1490,7 +1600,6 @@ box-sizing: border-box;
   display: inline-block;
   width: 18px;
   height: 18px;
-
   transition: fill 250ms var(--timing-function);
 }
 
@@ -1521,13 +1630,13 @@ box-sizing: border-box;
 
   letter-spacing: 0.03em;
 
-  color: var(--second-test-color);
+  color: var(--main-text-color-gray);
 }
 
 .form-option input {
   width: 16px;
   height: 15px;
-  background: var(--primery-text-color);
+  background: var(--main-text-color-black);
 }
 
 .checkbox {
@@ -1552,21 +1661,22 @@ box-sizing: border-box;
   height: 15px;
   margin-right: 8px;
 
-  border: 2px solid #212121;
+  border: 2px solid var(--main-text-color-black);
   border-radius: 2px;
 }
 
+/*  */
 .checkbox:checked + .icon-checkbox {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  background-image: url(../img/icon-check.svg);
+  border-color: var(--main-text-color-blue);
+  background-color: var(--main-text-color-blue);
+  background-image: url(../images/icons/v.svg);
   background-size: contain;
   background-origin: border-box;
 }
 
 .form-link {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: var(--main-text-color-blue);
 }
 
 .form .button-send:hover,
@@ -1579,7 +1689,7 @@ box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 
-  background-color: var(--accent-color);
+  background-color: var(--main-text-color-blue);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
@@ -1604,7 +1714,7 @@ box-sizing: border-box;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--light-color);
+  color: var(--main-text-color-white);
 }
 
 
