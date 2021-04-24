@@ -1380,7 +1380,7 @@ box-sizing: border-box;
   margin-right: auto;
 }
 
-.form-label {
+.input-footer {
   display: flex;
   flex-direction: column;
 }
@@ -1404,6 +1404,7 @@ box-sizing: border-box;
   display: flex;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 
   margin-left: 12px;
   min-width: 200px;
@@ -1415,12 +1416,12 @@ box-sizing: border-box;
   background: var(--main-text-color-blue);
 }
 
-.button-view {
+/* .button-view {
   display: flex;
   align-items: center;
   text-align: center;
   margin: 0 auto;
-}
+} */
 
 .button-title {
   margin-right: 10px;
@@ -1576,6 +1577,10 @@ box-sizing: border-box;
   /* outline: none; */
 }
 
+.form-field textarea {
+  outline: none;
+}
+
 .form-field input {
   cursor: pointer;
   margin: 0;
@@ -1596,6 +1601,7 @@ box-sizing: border-box;
 .form-field:hover .form-svg,
 .form-field:focus-within .form-svg{
   fill: var(--main-text-color-blue);
+  
 }
 
 .form-field .form-svg {
