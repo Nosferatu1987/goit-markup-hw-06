@@ -1369,11 +1369,12 @@ box-sizing: border-box;
   color: var(--main-text-color-white);
 }
 
-.subscribe {
+/* .subscribe {
   display: inline-flex;
-}
+} */
 
 .form-footer {
+  display: inline-flex;
   width: 358px;
 
   margin-left: auto;
